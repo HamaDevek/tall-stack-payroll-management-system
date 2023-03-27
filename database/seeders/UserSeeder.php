@@ -23,7 +23,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         // INITIAL ADMINISTRATOR
-            $new_code = '2023-0001';
+            $new_code = '2022-0001';
             $user = [
                 'email' => 'test@test.com',
                 'email_verified_at' => \Carbon\Carbon::now(),
