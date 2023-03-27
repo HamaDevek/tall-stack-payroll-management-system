@@ -23,16 +23,16 @@ class UserSeeder extends Seeder
     public function run()
     {
         // INITIAL ADMINISTRATOR
-            $new_code = '2022-0001';
+            $new_code = '2023-0001';
             $user = [
                 'email' => 'test@test.com',
                 'email_verified_at' => \Carbon\Carbon::now(),
                 'password' => Hash::make('password'),
-                'last_name' => 'Gallego',
-                'first_name' => 'Gezryl',
-                'middle_name' => 'Beato',
+                'last_name' => 'Developer',
+                'first_name' => 'Tester',
+                'middle_name' => '',
                 'code' => $new_code,
-                'phone_number' => '0975935907',
+                'phone_number' => '00947709998877',
                 'birth_date' => '1999-05-27',
                 'birth_place' => 'Binan, Laguna',
                 'fathers_name' => 'Fernando Gallego',
