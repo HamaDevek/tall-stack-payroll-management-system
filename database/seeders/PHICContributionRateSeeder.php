@@ -16,24 +16,24 @@ class PHICContributionRateSeeder extends Seeder
     public function run()
     {
         $collection = [
-            [
-                'year' => Carbon::now()->format('Y'),
-                'premium_rate' => 4,
-                'mbs_min' => 0,
-                'mbs_max' => 10000,
-            ],
-            [
-                'year' => Carbon::now()->format('Y'),
-                'premium_rate' => 4,
-                'mbs_min' => 1000.01,
-                'mbs_max' => 79999.99,
-            ],
-            [
-                'year' => Carbon::now()->format('Y'),
-                'premium_rate' => 4,
-                'mbs_min' => 80000.00,
-                'mbs_max' => 0,
-            ]
+            // [
+            //     'year' => Carbon::now()->format('Y'),
+            //     'premium_rate' => 4,
+            //     'mbs_min' => 0,
+            //     'mbs_max' => 10000,
+            // ],
+            // [
+            //     'year' => Carbon::now()->format('Y'),
+            //     'premium_rate' => 4,
+            //     'mbs_min' => 1000.01,
+            //     'mbs_max' => 79999.99,
+            // ],
+            // [
+            //     'year' => Carbon::now()->format('Y'),
+            //     'premium_rate' => 4,
+            //     'mbs_min' => 80000.00,
+            //     'mbs_max' => 0,
+            // ]
         ];
         PhicContributionRate::insert($collection);
     }

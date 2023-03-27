@@ -333,6 +333,6 @@ class SSSContributionModelSeeder extends Seeder
             ],
         ];
 
-        SssContributionModel::insert($collection);
+        // SssContributionModel::insert($collection);
     }
 }

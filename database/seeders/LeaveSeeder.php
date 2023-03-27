@@ -717,24 +717,24 @@ class LeaveSeeder extends Seeder
             ),
         );
 
-        foreach($data as $value) 
-        {
-            $new_leave = new Leave;
-            $new_leave->user_id = $value[0];
-            $new_leave->type_id = $value[1];
-            $new_leave->leave_type_id = $value[2];
-            $new_leave->start_date = $value[3];
-            if($value[4] != '') {
-                $new_leave->end_date = $value[4];
-            }
-            $new_leave->hours_duration = $value[5];
-            $new_leave->reason = $value[6];
-            $new_leave->status = $value[7];
-            $new_leave->is_paid = $value[8];
-            $new_leave->created_at = $value[9];
-            $new_leave->updated_at = $value[10];
-            $new_leave->save();
-        }
+        // foreach($data as $value) 
+        // {
+        //     $new_leave = new Leave;
+        //     $new_leave->user_id = $value[0];
+        //     $new_leave->type_id = $value[1];
+        //     $new_leave->leave_type_id = $value[2];
+        //     $new_leave->start_date = $value[3];
+        //     if($value[4] != '') {
+        //         $new_leave->end_date = $value[4];
+        //     }
+        //     $new_leave->hours_duration = $value[5];
+        //     $new_leave->reason = $value[6];
+        //     $new_leave->status = $value[7];
+        //     $new_leave->is_paid = $value[8];
+        //     $new_leave->created_at = $value[9];
+        //     $new_leave->updated_at = $value[10];
+        //     $new_leave->save();
+        // }
 
     }
 }
