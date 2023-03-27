@@ -56,32 +56,32 @@ class UserSeeder extends Seeder
 
         // GENERATED
             // BIMONTHLY USER
-                $designation_ids_bmo = [12, 13];
-                $total_user_bmo = 50;
-                for($i = 1;$i <= $total_user_bmo; $i++) {
-                    $user = User::factory(1)->create();
-                    $user = $user[0];
-                    $rand_des_id = rand(0,1);
-                    $designation_id = $designation_ids_bmo[$rand_des_id];
-                    $user->frequency_id = PayrollPeriod::FREQUENCY_BIMONTHLY;
-                    $user->designations()->attach([$designation_id]);
-                    $user->save();
-                }
+                // $designation_ids_bmo = [12, 13];
+                // $total_user_bmo = 50;
+                // for($i = 1;$i <= $total_user_bmo; $i++) {
+                //     $user = User::factory(1)->create();
+                //     $user = $user[0];
+                //     $rand_des_id = rand(0,1);
+                //     $designation_id = $designation_ids_bmo[$rand_des_id];
+                //     $user->frequency_id = PayrollPeriod::FREQUENCY_BIMONTHLY;
+                //     $user->designations()->attach([$designation_id]);
+                //     $user->save();
+                // }
             // 
 
             // WEEKLY USER
-                $designation_ids_wkl = [11, 6, 5];
-                $total_user_wkl = 50;
-                for($i = 1;$i <= $total_user_wkl; $i++) {
+                // $designation_ids_wkl = [11, 6, 5];
+                // $total_user_wkl = 50;
+                // for($i = 1;$i <= $total_user_wkl; $i++) {
                     
-                    $user = User::factory(1)->create();
-                    $user = $user[0];
-                    $rand_des_id = rand(0,1);
-                    $designation_id = $designation_ids_wkl[$rand_des_id];
-                    $user->frequency_id = PayrollPeriod::FREQUENCY_BIMONTHLY;
-                    $user->designations()->attach([$designation_id]);
-                    $user->save();
-                }
+                //     $user = User::factory(1)->create();
+                //     $user = $user[0];
+                //     $rand_des_id = rand(0,1);
+                //     $designation_id = $designation_ids_wkl[$rand_des_id];
+                //     $user->frequency_id = PayrollPeriod::FREQUENCY_BIMONTHLY;
+                //     $user->designations()->attach([$designation_id]);
+                //     $user->save();
+                // }
             //
         //
     }
