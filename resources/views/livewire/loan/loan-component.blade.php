@@ -36,7 +36,7 @@
                             </div>
 
                             <div class="w-full text-white text-3xl font-bold text-center">
-                                ₱{{ number_format($total_balance, 2, '.', ',') }}
+                                ${{ number_format($total_balance, 2, '.', ',') }}
                             </div>
 
                             <div class="flex items-center justify-between space-x-2">
@@ -90,7 +90,7 @@
                                     <div class="flex justify-between">
                                         <div>
                                             <div class="relative text-xl">
-                                                <span class="absolute text-white font-bold">₱</span>
+                                                <span class="absolute text-white font-bold">$</span>
                                                 <input type="number " wire:model="amount" class="w-24 text-white font-bold bg-transparent focus:outline-none focus:ring-0 focus:border-stone-200 border-b border-transparent pl-4">
                                             </div>
                                             @error('amount')
@@ -99,7 +99,7 @@
                                         </div>
                                         <div>
                                             <div class="relative text-xl">
-                                                <span class="absolute text-white font-bold">₱</span>
+                                                <span class="absolute text-white font-bold">$</span>
                                                 <div class="text-white font-bold bg-transparent pl-4">
                                                     {{ number_format($installment_amount, 2, '.', ',') }}
                                                 </div>

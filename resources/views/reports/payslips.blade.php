@@ -46,7 +46,7 @@
             <td colspan=""></td>
             <td colspan=""></td>
             <td colspan="1" style="border:1px solid #000; font-size:12pt; font-weight: bold; text-align: left;">NET PAY</td>
-            <td colspan="2" style="border:1px solid #000; text-align: right; font-weight: bold; font-size: 12pt;border-right:1px solid #000; ">₱{{ $data['net_pay'] }}</td>
+            <td colspan="2" style="border:1px solid #000; text-align: right; font-weight: bold; font-size: 12pt;border-right:1px solid #000; ">${{ $data['net_pay'] }}</td>
         </tr>
         <tr>
             <td colspan="8"></td>

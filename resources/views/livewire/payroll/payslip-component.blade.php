@@ -39,17 +39,17 @@
 
                                         <td class="px-2 md:px-4 py-3 align-top">
                                             <p class=" text-xs text-right text-stone-600 font-bold">
-                                                ₱{{ number_format($payslip->gross_pay, 2, '.', ',') }}
+                                                ${{ number_format($payslip->gross_pay, 2, '.', ',') }}
                                             </p>
                                         </td>
                                         <td class="px-2 md:px-4 py-3 align-top">
                                             <p class=" text-xs text-right text-stone-600 font-bold">
-                                                ₱{{ number_format($payslip->deductions, 2, '.', ',') }}
+                                                ${{ number_format($payslip->deductions, 2, '.', ',') }}
                                             </p>
                                         </td>
                                         <td class="px-2 md:px-4 py-3 align-top">
                                             <p class=" text-xs text-right text-stone-600 font-bold">
-                                                ₱{{ number_format($payslip->net_pay, 2, '.', ',') }}
+                                                ${{ number_format($payslip->net_pay, 2, '.', ',') }}
                                             </p>
                                         </td>
                                         

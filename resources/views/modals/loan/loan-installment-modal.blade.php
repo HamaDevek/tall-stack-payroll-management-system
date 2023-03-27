@@ -61,7 +61,7 @@
                 Loan Balance
             </x-forms.label>
             <div class="w-full text-sm rounded-md shadow-sm border border-gray-300 px-3 p-2">
-                ₱ {{ number_format($loan_balance, 2, '.',',')}}
+                $ {{ number_format($loan_balance, 2, '.',',')}}
             </div>
         </div>
 

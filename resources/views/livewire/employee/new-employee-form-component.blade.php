@@ -273,7 +273,7 @@
 
                                     <div class="flex flex-col">
                                         <span class="text-xs font-bold uppercase">{{ $designation->designation_name }}</span>
-                                        <span class="text-base font-bold mt-2">₱{{ number_format($designation->daily_rate, 2, '.', '') }}/daily</span>
+                                        <span class="text-base font-bold mt-2">${{ number_format($designation->daily_rate, 2, '.', '') }}/daily</span>
                                         <span class="text-xs text-stone-500 line-clamp-2">
                                             {{ $designation->details }}
                                         </span>

@@ -284,7 +284,7 @@
             </div>
 
             <div class=" w-full">
-                <p class="text-stone-700 text-sm font-bold">Daily Rate: ₱{{ number_format($daily_rate, 2, '.', ',') }}</p>
+                <p class="text-stone-700 text-sm font-bold">Daily Rate: ${{ number_format($daily_rate, 2, '.', ',') }}</p>
             </div>
 
             {{--  --}}

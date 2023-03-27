@@ -30,7 +30,7 @@
                                 </td>
 
                                 <td class="px-4 py-3 text-xs text-left text-stone-600 font-bold">
-                                    ₱{{ number_format($loan->installment_amount, 2, '.', ',') }}
+                                    ${{ number_format($loan->installment_amount, 2, '.', ',') }}
                                 </td>
 
                                 
@@ -56,7 +56,7 @@
                                 </td>
 
                                 <td class="px-4 py-3 text-xs text-right text-stone-600 font-bold">
-                                    ₱{{ number_format($loan->amount, 2, '.', ',') }}
+                                    ${{ number_format($loan->amount, 2, '.', ',') }}
                                 </td>
 
                                 

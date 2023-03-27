@@ -17,7 +17,7 @@
             <div class="w-full flex pb-2 space-x-8">
                 <div class="flex flex-col">
                     <span class="text-xs text-stone-500 font-semibold">Total Payroll</span>
-                    <span class="text-lg text-stone-700 font-bold">₱{{ number_format($total_net_pay, 2, '.', ',') }}</span>
+                    <span class="text-lg text-stone-700 font-bold">${{ number_format($total_net_pay, 2, '.', ',') }}</span>
                 </div>
                 <div class="flex flex-col">
                     <span class="text-xs text-stone-500 font-semibold">Period Start</span>
@@ -66,17 +66,17 @@
                                 </td>
                                 <td class="px-2 md:px-4 py-3 align-top">
                                     <p class=" text-xs text-right text-stone-600 font-bold">
-                                        ₱{{ number_format($payroll['basic_pay'], 2, '.', ',') }}
+                                        ${{ number_format($payroll['basic_pay'], 2, '.', ',') }}
                                     </p>
                                 </td>
                                 <td class="px-2 md:px-4 py-3 align-top">
                                     <p class=" text-xs text-right text-stone-600 font-bold">
-                                        ₱{{ number_format($payroll['gross_pay'], 2, '.', ',') }}
+                                        ${{ number_format($payroll['gross_pay'], 2, '.', ',') }}
                                     </p>
                                 </td>
                                 <td class="px-2 md:px-4 py-3 align-top">
                                     <p class=" text-xs text-right text-stone-600 font-bold" wire:key="{{ $payroll['user_id'] }}.{{ $payroll['tax_contributions'] }}">
-                                        ₱{{ number_format($payroll['tax_contributions'], 2, '.', ',') }}
+                                        ${{ number_format($payroll['tax_contributions'], 2, '.', ',') }}
                                         @if($payroll['is_tax_exempted'] == false)
                                             <a class="cursor-pointer text-blue-500 ml-2" wire:click="editTaxContribution({{ $payroll['user_id'] }})"><i class="fa-solid fa-pen"></i></a>
                                         @endif
@@ -84,12 +84,12 @@
                                 </td>
                                 <td class="px-2 md:px-4 py-3 align-top">
                                     <p class=" text-xs text-right text-stone-600 font-bold">
-                                        ₱{{ number_format($payroll['total_deductions'], 2, '.', ',') }}
+                                        ${{ number_format($payroll['total_deductions'], 2, '.', ',') }}
                                     </p>
                                 </td>
                                 <td class="px-2 md:px-4 py-3 align-top">
                                     <p class=" text-xs text-right text-stone-600 font-bold">
-                                        ₱{{ number_format($payroll['net_pay'], 2, '.', ',') }}
+                                        ${{ number_format($payroll['net_pay'], 2, '.', ',') }}
                                     </p>
                                 </td>
                             </tr>

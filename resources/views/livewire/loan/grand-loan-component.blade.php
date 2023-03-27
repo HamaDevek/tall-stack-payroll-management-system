@@ -91,13 +91,13 @@
                                             @endif
                                         </td>
                                         <td class="px-4 py-3 text-xs text-right text-stone-600 font-bold hidden md:table-cell">
-                                            ₱{{ number_format($loan->installment_amount, 2, '.', ',') }}
+                                            ${{ number_format($loan->installment_amount, 2, '.', ',') }}
                                         </td>
                                         <td class="px-4 py-3 text-xs text-right text-stone-600 font-bold">
-                                            ₱{{ number_format($loan->amount, 2, '.', ',') }}
+                                            ${{ number_format($loan->amount, 2, '.', ',') }}
                                         </td>
                                         <td class="px-4 py-3 text-xs text-right text-stone-600 font-bold">
-                                            ₱{{ number_format($loan->balance, 2, '.', ',') }}
+                                            ${{ number_format($loan->balance, 2, '.', ',') }}
                                         </td>
                                         
                                     </tr>
