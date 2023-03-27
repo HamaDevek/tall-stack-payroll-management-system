@@ -20,6 +20,6 @@ class SSSContributionRateSeeder extends Seeder
         $sss_contribution_rate->msc_min = 3000;
         $sss_contribution_rate->msc_max = 25000;
         $sss_contribution_rate->year = 2021;
-        // $sss_contribution_rate->save();
+        $sss_contribution_rate->save();
     }
 }
